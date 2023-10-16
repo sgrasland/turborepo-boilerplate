@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server-dev.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "node server-prod.js",
+    "lint": "next lint",
+    "clean": "rm -rf node_modules"
   },
   "dependencies": {
     "next": "^13.4.1",
