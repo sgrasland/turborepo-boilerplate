@@ -5,12 +5,18 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "turbo dev",
+    "dev": "dotenv -- turbo dev",
+    "dev:backend": "dotenv -- yarn workspace backend dev",
+    "dev:native": "yarn dev:ui && dotenv -- yarn workspace native dev",
+    "dev:web": "yarn dev:ui && dotenv -- yarn workspace web dev",
+    "dev:ui": "dotenv -- yarn workspace ui dev&",
     "build": "turbo build",
+    "test:backend": "dotenv -- yarn workspace backend test",
     "clean": "turbo clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\" --ignore-path .gitignore"
   },
   "devDependencies": {
+    "dotenv-cli": "^7.3.0",
     "prettier": "^2.7.1",
     "turbo": "latest"
   },
