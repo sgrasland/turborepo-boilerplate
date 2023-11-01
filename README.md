@@ -12,7 +12,7 @@ git push origin master
 ```
 
 ## Initialization
-Run `yarn` first to install dependencies.
+Run `yarn` first to install dependencies.<br/>
 Rename the `.env.example` file to `.env`
 
 ## Starting Postgres
