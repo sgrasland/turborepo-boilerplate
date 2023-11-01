@@ -13,6 +13,7 @@ git push origin master
 
 ## Initialization
 Run `yarn` first to install dependencies.
+Rename the `.env.example` file to `.env`
 
 ## Starting Postgres
 Prerequisity : You need to have `docker` and `docker-compose` installed on your system.
